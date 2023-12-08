@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Types of ML &#8212; ML book</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -80,6 +81,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -133,9 +143,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../README.html">
+  
   
   
   
@@ -145,8 +157,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="ML book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="ML book - Home"/>`);</script>
   
   
 </a></div>
@@ -229,6 +241,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../unsupervised_learning/unsupervised.html">Unsupervised Learning</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../unsupervised_learning/pca.html">Principal components analysis (PCA)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unsupervised_learning/clustering_metrics.html">Clustering metrics</a></li>
+
+
+
+
+
 <li class="toctree-l2"><a class="reference internal" href="../unsupervised_learning/k_means.html">K-means</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unsupervised_learning/hierarchic_clustering.html">Hierarchical Clustering</a></li>
 </ul>
@@ -330,10 +347,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../math/optimization/newton.html">Newton’s method</a></li>
 </ul>
 </li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">HW</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../not_mnist_student.html">HW notMNIST</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -446,20 +459,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -561,11 +576,11 @@ document.write(`
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
 <p>Suppose that true labels <span class="math notranslate nohighlight">\(y\)</span> and predictions <span class="math notranslate nohighlight">\(\hat y\)</span> are as follows:</p>
-<table class="colwidths-auto table" id="binary-metrics">
+<table class="table" id="binary-metrics">
 <caption><span class="caption-number">Table 1 </span><span class="caption-text">Binary classificaton</span><a class="headerlink" href="#binary-metrics" title="Permalink to this table">#</a></caption>
 <thead>
-<tr class="row-odd"><th class="text-center head"><p><span class="math notranslate nohighlight">\(y\)</span></p></th>
-<th class="text-center head"><p><span class="math notranslate nohighlight">\(\hat y\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(y\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\hat y\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -591,13 +606,13 @@ document.write(`
 <p><span style="display:none" id="binary_loss">W3sicXVlc3Rpb24iOiAiQ2FsY3VsYXRlIHRoZSBtaXNjbGFzc2lmaWNhdGlvbiByYXRlIiwgInR5cGUiOiAibnVtZXJpYyIsICJhbnN3ZXJzIjogW3sidHlwZSI6ICJ2YWx1ZSIsICJ2YWx1ZSI6IDAuNCwgImNvcnJlY3QiOiB0cnVlLCAiZmVlZGJhY2siOiAiUmlnaHQgeW91IGFyZSEgSGVyZSAkTj01JCwgdHdvIGluY29ycmVjdCBwcmVkaWN0aW9ucywgc28gdGhlIGxvc3MgaXMgJFxcZnJhYyAyNSQifSwgeyJ0eXBlIjogImRlZmF1bHQiLCAiZmVlZGJhY2siOiAiTm9wZSJ9XX0sIHsicXVlc3Rpb24iOiAiQ2FsY3VsYXRlIHRoZSBjcm9zcy1lbnRyb3B5IGxvc3MiLCAidHlwZSI6ICJtYW55X2Nob2ljZSIsICJhbnN3ZXJzIjogW3siYW5zd2VyIjogIiQwJCIsICJjb3JyZWN0IjogZmFsc2UsICJmZWVkYmFjayI6ICJUb28gbG93In0sIHsiYW5zd2VyIjogIiRcXGZyYWMgMTUgXFxsb2cgMiQiLCAiY29ycmVjdCI6IGZhbHNlLCAiZmVlZGJhY2siOiAiRG9lc24ndCBsb29rIGNvcnJlY3QifSwgeyJhbnN3ZXIiOiAiJFxcZnJhYyAxNSBcXGxvZyAzJCIsICJjb3JyZWN0IjogZmFsc2UsICJmZWVkYmFjayI6ICJOb3BlIn0sIHsiYW5zd2VyIjogIiQrXFxpbmZ0eSQiLCAiY29ycmVjdCI6IHRydWUsICJmZWVkYmFjayI6ICJPaCwgeWVhaC4uLiJ9XX1d</span></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="suHEveeNiHWo" data-shufflequestions="False"
+<div class="output text_html"><div id="BTWcgQNWlMDU" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#suHEveeNiHWo {
+#BTWcgQNWlMDU {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -768,14 +783,14 @@ document.write(`
     }
 }
 </style></div><script type="application/javascript">var element=document.getElementById("binary_loss");
-            var questionssuHEveeNiHWo;
+            var questionsBTWcgQNWlMDU;
             try {
-               questionssuHEveeNiHWo=JSON.parse(window.atob(element.innerHTML));
+               questionsBTWcgQNWlMDU=JSON.parse(window.atob(element.innerHTML));
             } catch(err) {
                console.log("Fell into catch");
-               questionssuHEveeNiHWo = JSON.parse(element.innerHTML);
+               questionsBTWcgQNWlMDU = JSON.parse(element.innerHTML);
             }
-            console.log(questionssuHEveeNiHWo);;
+            console.log(questionsBTWcgQNWlMDU);;
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1524,8 +1539,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("suHEveeNiHWo")) {
-            show_questions(questionssuHEveeNiHWo,  suHEveeNiHWo); 
+          if(document.getElementById("BTWcgQNWlMDU")) {
+            show_questions(questionsBTWcgQNWlMDU,  BTWcgQNWlMDU); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1534,8 +1549,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("suHEveeNiHWo");
-        // console.log(document.getElementById("suHEveeNiHWo"));
+        //console.log("BTWcgQNWlMDU");
+        // console.log(document.getElementById("BTWcgQNWlMDU"));
 
         try_show();
         }
@@ -1560,10 +1575,10 @@ if (typeof version == 'undefined') {
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
 <p>Classifying into <span class="math notranslate nohighlight">\(3\)</span> classes, model produces the following outputs:</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-center head"><p><span class="math notranslate nohighlight">\(y\)</span></p></th>
-<th class="text-center head"><p><span class="math notranslate nohighlight">\(\boldsymbol {\hat y}\)</span></p></th>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(y\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\boldsymbol {\hat y}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1586,13 +1601,13 @@ if (typeof version == 'undefined') {
 <p><span style="display:none" id="cross_entropy_loss">W3sicXVlc3Rpb24iOiAiQ2FsY3VsYXRlIHRoZSBjcm9zcyBlbnRyb3B5IGZyb20gdGhlIHByZXZpb3VzIGV4YW1wbGUiLCAidHlwZSI6ICJudW1lcmljIiwgImFuc3dlcnMiOiBbeyJ0eXBlIjogInZhbHVlIiwgInZhbHVlIjogMC44NzUsICJjb3JyZWN0IjogdHJ1ZSwgImZlZWRiYWNrIjogIkV4YWN0bHkhIn0sIHsidHlwZSI6ICJkZWZhdWx0IiwgImZlZWRiYWNrIjogIkluY29ycmVjdCJ9XX1d</span></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="dwRHaclyajDU" data-shufflequestions="False"
+<div class="output text_html"><div id="TqakdjGiCBoh" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#dwRHaclyajDU {
+#TqakdjGiCBoh {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1763,14 +1778,14 @@ if (typeof version == 'undefined') {
     }
 }
 </style></div><script type="application/javascript">var element=document.getElementById("cross_entropy_loss");
-            var questionsdwRHaclyajDU;
+            var questionsTqakdjGiCBoh;
             try {
-               questionsdwRHaclyajDU=JSON.parse(window.atob(element.innerHTML));
+               questionsTqakdjGiCBoh=JSON.parse(window.atob(element.innerHTML));
             } catch(err) {
                console.log("Fell into catch");
-               questionsdwRHaclyajDU = JSON.parse(element.innerHTML);
+               questionsTqakdjGiCBoh = JSON.parse(element.innerHTML);
             }
-            console.log(questionsdwRHaclyajDU);;
+            console.log(questionsTqakdjGiCBoh);;
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2519,8 +2534,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("dwRHaclyajDU")) {
-            show_questions(questionsdwRHaclyajDU,  dwRHaclyajDU); 
+          if(document.getElementById("TqakdjGiCBoh")) {
+            show_questions(questionsTqakdjGiCBoh,  TqakdjGiCBoh); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2529,8 +2544,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("dwRHaclyajDU");
-        // console.log(document.getElementById("dwRHaclyajDU"));
+        //console.log("TqakdjGiCBoh");
+        // console.log(document.getElementById("TqakdjGiCBoh"));
 
         try_show();
         }
@@ -2558,7 +2573,7 @@ if (typeof version == 'undefined') {
 <p>Example of one-dimensional linear regression (figure 1.5 from <span id="id1">[<a class="reference internal" href="../bibliography.html#id3" title="Kevin P. Murphy. Probabilistic Machine Learning: An introduction. MIT Press, 2022. URL: probml.ai.">Murphy, 2022</a>]</span>):</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../_images/7b9f311f98cc3a20fbe668161537bc9a938cddc85c123ee532fc9df13967f024.png" src="../_images/7b9f311f98cc3a20fbe668161537bc9a938cddc85c123ee532fc9df13967f024.png" />
+<img alt="../_images/12fbe4e6b56afa3d0bf4f7a41d560b979ba0d83584ca2ad4f3b5d5ef86316b87.png" src="../_images/12fbe4e6b56afa3d0bf4f7a41d560b979ba0d83584ca2ad4f3b5d5ef86316b87.png" />
 </div>
 </div>
 <p><strong>Q.</strong> Suppose that training dataset has only one sample (<span class="math notranslate nohighlight">\(N=1\)</span>) and one feature (<span class="math notranslate nohighlight">\(n=1\)</span>). How would linear regression look like in this case? What if <span class="math notranslate nohighlight">\(N=2\)</span>?</p>
@@ -2580,7 +2595,19 @@ if (typeof version == 'undefined') {
 <p>Clusterisation made on <a class="reference internal" href="data.html#iris"><span class="std std-ref">Iris dataset</span></a> (figure 1.8 from <span id="id2">[<a class="reference internal" href="../bibliography.html#id3" title="Kevin P. Murphy. Probabilistic Machine Learning: An introduction. MIT Press, 2022. URL: probml.ai.">Murphy, 2022</a>]</span>):</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../_images/1b2131d1376078ca8838681de027e5a206eaa09913bc08a0fe751ed519869ded.svg" src="../_images/1b2131d1376078ca8838681de027e5a206eaa09913bc08a0fe751ed519869ded.svg" /></div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GaussianMixture</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="semisupervised-learning">
@@ -2628,11 +2655,10 @@ if (typeof version == 'undefined') {
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="data.html"
@@ -2652,10 +2678,7 @@ if (typeof version == 'undefined') {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -2700,6 +2723,7 @@ By KBTU
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -2726,8 +2750,8 @@ By KBTU
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
